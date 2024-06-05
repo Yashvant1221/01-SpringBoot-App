@@ -7,6 +7,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class Application {
 
+        private Map<String, Object> cache = new HashMap<String, Object>();
+
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(Application.class, args);
 		//Changes for HIS-134
@@ -14,5 +16,13 @@ public class Application {
                 
                 int a = 10;
 	}
+
+
+         // HIS-301 related changes
+         public void loadDataToCatche(){
+
+             //Logic goes here
+
+         }
 
 }
